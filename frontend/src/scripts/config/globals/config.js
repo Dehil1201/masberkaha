@@ -5,10 +5,10 @@ const getBase = () => {
 
 const CONFIG = {
   TOKEN: '12345',
-  BASE_URL: getBase() + '/backend/',
-  BASE_FRONT_URL: getBase() + '/frontend/',
-  BASE_IMAGE_URL: getBase() +'/images/',
-  BASE_FOTO_URL: getBase() +'/backend/uploads/foto/',
+  BASE_URL: getBase() + '/masberkaha/backend/',
+  BASE_FRONT_URL: getBase() + '/masberkaha/frontend/',
+  BASE_IMAGE_URL: getBase() +'/masberkaha/images/',
+  BASE_FOTO_URL: getBase() +'/masberkaha/backend/uploads/foto/',
   CACHE_NAME: {
     prefix: '',
     suffix: 'v1',
