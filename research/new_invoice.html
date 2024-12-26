@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<title>Struk Sidamas</title>
+	<link href="frontend/vendor/fontawesome-free/css/all.min.css" rel='stylesheet' type='text/css'>
+	<link
+			href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+			rel="stylesheet">
+	<link href="frontend/src/styles/sb-admin-2.min.css" rel='stylesheet'>
+	<link href="frontend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+	<link href="frontend/vendor/datatables/select.dataTables.min.css" rel="stylesheet">
+</head>
+
+<body>
+`
+<style type="text/css">
+
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+	.notaDesign {
+		font-family: 'Nunito', Times, serif;
+		width: 21.56cm;
+		height: 10.39cm;
+		font-size: 14px;
+	}
+
+	.box {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		background-color: #23395d;
+	}
+
+	.box-purple {
+
+	}
+
+	.box-gray {
+		background-color: #e5e5e5;
+	}
+
+
+	.lastly {
+		margin-left: auto;
+		height: 50px;
+		width: 200px;
+		color: white;
+		background-color: #23395d;
+	}
+
+	.lastly-gray {
+		background-color: #e5e5e5;
+	}
+
+	.title {
+		background-color: #23395d;
+		flex: 1 0 100%;
+		color: white;
+		text-align: center;
+	}
+
+	.first {
+		color: white;
+	}
+
+	.text-primary {
+		color: black;
+	}
+
+	.gray-header {
+		background-color: #c4c4c4;
+	}
+
+	.gray-content {
+		background-color: #e5e5e5;
+	}
+
+	.box-shadow {
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+	.mg-left {
+		margin-left: 20px;
+	}
+
+	.mg-end {
+		margin-left: 10px;
+	}
+
+	td {
+		height: 50px;
+		width: 50px;
+	}
+
+	th {
+		background-color: #c4c4c4;
+	}
+
+	#table_report {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	#table_report td {
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	#barcode {
+		width: 180px;
+	}
+
+	.container-barcode {
+		text-align: center;
+		margin-right: 40px;
+		width: 100px;
+	}
+
+	.image {
+		width: 100px;
+		height: 100px;
+	}
+
+</style>
+<div class="notaDesign gray-content" id="notaPrint">
+
+	<div class="box box-purple">
+		<div class="first mg-left">
+			<p>Toko Mas Berkah </p>
+		</div>
+		<div class="lastly" style="font-size: 14px">
+			<p>Tanggal : 12 Desember 1998 </p>
+		</div>
+		<div class="title bold">
+			<p>Surat Jaminan</p>
+		</div>
+	</div>
+
+	<div class="box box-gray">
+		<div class="first mg-left text-primary">
+			<p> No. Faktur : FJ-220627-0055 </p>
+		</div>
+		<div class="lastly lastly-gray text-primary">
+			<p>Sales </p>
+		</div>
+	</div>
+
+	<table id="table_report" class="box-shadow" width="100%s" align="center">
+		<thead>
+		<tr>
+			<th>Foto</th>
+			<th>QTY</th>
+			<th>Nama Produk</th>
+			<th>Berat</th>
+			<th>Harga</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><img class="image" src="sample.png"/></td>
+			<td>1</td>
+			<td>Emas Antam</td>
+			<td>1.8</td>
+			<td>250.000</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+	<div class="box box-gray">
+		<div class="first mg-left bold text-primary">
+			<p>#Sejuta Tujuh Ratus lima puluh ribu</p>
+		</div>
+		<div class="lastly lastly-gray" style="padding-right: 20px">
+			<div class="mg-end gray-header box-shadow">
+				<p style="padding: 5px" >Total(RP) : 18.7000 </p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="box box-gray">
+		<div class="first  mg-left text-primary ">
+			<p>Perhatian </p>
+			<ol>
+				<li><p>Kadar produl, adalah 16K 000) dan 17k 050) </p></li>
+				<li><p>roduk yang dibelt telah ditimbang din diaksikan oleh petutse </p></li>
+				<li><p>Kadar produl, adalah 16K 000) dan 17k 050) </p></li>
+			</ol>
+		</div>
+		<div class="lastly lastly-gray text-primary ">
+			<div class="container-barcode">
+				<svg id="barcode" style="background-color: transparent"></svg>
+			</div>
+
+		</div>
+	</div>
+</div>
+`
+</body>
+<script src="JsBarcode.all.min.js"></script>
+
+
+<script>
+	JsBarcode("#barcode", "P000100", {
+		width: 2,
+		fontSize: 14,
+		height: 40,
+		text: "P000100",
+		textAlign: "center",
+		fontOptions: "bold",
+		displayValue: false
+	});
+</script>
+
+</html>
+
+

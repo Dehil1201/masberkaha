@@ -1,0 +1,4 @@
+
+AddType text/html .css,.js
+AddType text/css .css
+AddType text/javascript .js

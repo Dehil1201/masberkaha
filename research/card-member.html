@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+        :root {
+    --blue: hsl(212, 86%, 64%);
+}
+        body {
+            font-family: 'Nunito', Times, serif;
+        }
+        .container{
+            width: 8.56cm;
+            height: 5.39cm;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+            position: relative;
+        }
+        .headDesign{
+            height: 1cm;
+            text-align: center;
+            font-weight: bold;
+            line-height: 24pt;
+        }
+        .footerDesign{
+            height: 1cm;
+            width: 100%;
+            position: absolute;
+            box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+            bottom: 0;
+            background-color: #4e73df
+        }
+        .box{
+            border-top: 3px solid var(--blue);
+        }
+
+        .barcode{
+            text-align: center;
+        }
+
+        .code-customer{
+            margin-left: 5px;
+            text-decoration: underline;
+            font-size: 20pt;
+            line-height: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .container-barcode{
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="headDesign box">Toko Mas Asih</div>
+        <p class="code-customer">P000100</p>
+        <div class="container-barcode">
+
+            <svg id="barcode"></svg>
+        </div>
+        <div class="footerDesign"></div>
+    </div>
+</body>
+<script src="JsBarcode.all.min.js"></script>
+
+
+<script>
+    JsBarcode("#barcode", "P000100", {
+    width: 2,
+    fontSize: 14,
+    height: 40,
+    text:"P000100",
+    textAlign: "center",
+    fontOptions: "bold",
+    displayValue: false
+});
+</script>
+</html>
